@@ -1,4 +1,7 @@
-<html>
+<!doctype html>
+<html lang="en">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<head>
 		<title>I am Mikhail Kobzarev aka mihdan</title>
 		<style>
@@ -6,40 +9,268 @@
 				padding: 0;
 				margin: 0;
 				border: 0;
-				text-align: center;
-				height: 100%;
 			}
+			html {
+				font-size: 62.5%;
+				scroll-behavior: smooth;
+				box-sizing: border-box;
+			}
+			body {
+				height: 100%;
+				background-color: #333;
+				color: #333;
+				font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+				font-size: 1.8em;
+				line-height: 1.4;
+				padding-top: 40px;
+				padding-bottom: 40px;
+			}
+			*,
+			*:before,
+			*:after {
+				box-sizing: inherit;
+			}
+			::-webkit-scrollbar {
+				-webkit-appearance: none;
+			}
+
+			::-webkit-scrollbar-corner {
+				background: transparent;
+			}
+
+			::-webkit-scrollbar:vertical {
+				width: 14px
+			}
+
+			::-webkit-scrollbar:horizontal {
+				height: 14px
+			}
+
+			::-webkit-scrollbar-thumb {
+				min-height: 20px;
+				background-color: rgba(0,0,0,.3);
+				border-radius: 10px;
+				border: 3px solid #fff;
+				background-clip: content-box;
+			}
+
+			::-webkit-scrollbar-thumb:hover {
+				background-color: rgba(0,0,0,.5);
+			}
+
+			::-webkit-scrollbar-track {
+				border-radius: 1px;
+				background-color: #fff
+			}
+			a {
+				text-decoration: none;
+				border-bottom: 1px solid #2f80ed;
+				color: #2f80ed;
+			}
+			h1, h2, h3, h4, h5, h6 {
+				margin-top: 0;
+				margin-bottom: 20px;
+				text-transform: uppercase;
+				font-weight: normal;
+				/*border-bottom: 1px solid #333;*/
+			}
+
 			.page {
-				width: 600px;
-				margin: 40px auto;
+				width: 700px;
+				margin: 0 auto;
 				text-align: left;
+			}
+			.columns {
+				display: flex;
+				gap: 20px
+			}
+
+			section {
+				width: 700px;
+				padding: 40px 100px;
+				background-color: #f2f2f2;
+			}
+
+			section:nth-child(even) {
+				background-color: #fff;
+			}
+
+			.about,
+			.skills {
+				list-style: none;
+				margin-left: 0;
+				padding-left: 0;
+			}
+
+			.about {
+				font-size: 0.9em;
+			}
+
+			.skills li {
+				display: inline-block;
+				background-color: #e2e2e2;
+				margin-right: 4px;
+				margin-bottom: 8px;
+				padding: 2px 6px;
+				border-radius: 2px;
+			}
+
+			.experience {
+				display: flex;
+				gap: 20px;
+				flex-wrap: wrap;
+			}
+
+			.experience dl {
+				flex-basis: 230px;
+				margin: 0;
+			}
+			.experience  dt {
+				font-weight: bold;
+			}
+			.experience  dd {
+				margin-left: 0;
+				margin-bottom: 20px;
+				font-size: 0.9em;
 			}
 		</style>
 	</head>
 	<body>	
 		<div class="page">
-			<h1>Mikhail Kobzarev</h1>
-			<p>Hi, I am Mikhail — a senior software engineer, WordPress ninja.</p>
 
-			<h2>GitHub Stats</h2>
+			<section>
+				<div class="columns">
+					<div class="column">
+						<img src="./assets/images/i-am-mihdan.jpg" alt="Mikhail Kobzarev" width="170">
+					</div>
+					<div class="column">
+						<h1>Mikhail Kobzarev</h1>
+						<p>Hi, I am Mikhail — a senior software engineer, WordPress Ninja.</p>
+						<ul class="about">
+							<li>Age: 35</li>
+							<li>Country: Russia</li>
+							<li>Marital status : Married</li>
+							<li>Employment type: Full time</li>
+							<li>Job Location type: Telecommute</li>
+							<li>Salary expectations: 300 000 RUB.</li>
+						</ul>
+					</div>
+				</div>
+			</section>
 
-			<img src="https://github-readme-stats.vercel.app/api?username=mihdan&show_icons=true&theme=default" width="500">		
+			<section>
+				<h2>Experience</h2>
 
-			<h2>Top Languages</h2>
+				<div class="experience">
+					<dl>
+						<dt><a href="https://whisk.com">Whisk</a></dt>
+						<dd>Senior WordPress Developer <br>2020-2021</dd>
+					</dl>
+					<dl>
+						<dt><a href="https://the-challenger.ru/" target="_blank">The Challenger</a></dt>
+						<dd>Team Lead <br>2017-2020</dd>
+					</dl>
+					<dl>
+						<dt><a href="https://roomble.com" target="_blank">Roomble</a></dt>
+						<dd>Team Lead <br>2015-2017</dd>
+					</dl>
+					<dl>
+						<dt><a href="https://teambo.me" target="_blank">Мой Спорт</a></dt>
+						<dd>Team Lead <br>2013-2014</dd>
+					</dl>
+					<dl>
+						<dt><a href="http://inforos.ru" target="_blank">Inforos</a></dt>
+						<dd>Senior PHP Developer <br>2007-2013</dd>
+					</dl>
+					<dl>
+						<dt><a href="https://www.imagos.ru" target="_blank">Imagos</a></dt>
+						<dd>PHP Developer <br>2005-2007</dd>
+					</dl>
+					<dl>
+						<dt><a href="https://ingate.ru" target="_blank">Ingate</a></dt>
+						<dd>PHP Developer <br>2004-2005</dd>
+					</dl>
+					<dl>
+						<dt><a href="https://kobzarev.com" target="_blank">Self-study</a></dt>
+						<dd>WEB Developer <br>2003-2004</dd>
+					</dl>
+				</div>
+			</section>
 
-			<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mihdan&layout=compact" width="500">		
+			<section>
+				<h2>Education</h2>
+				<div class="experience">
+					<dl>
+						<dt>Tula State University</dt>
+						<dd>Pending Master’s (Bachelor’s) degree<br>2003 - 2008</dd>
+					</dl>
+				</div>
+			</section>
 
-			<h2>Contacts</h2>
+			<section>
+				<h2>Skills</h2>
+				<ul class="skills">
+					<li>PHP</li>
+					<li>SQL</li>
+					<li>MySQL</li>
+					<li>PostgreSQL</li>
+					<li>Memcached</li>
+					<li>Redis</li>
+					<li>ElasticSearch</li>
+					<li>Sphinx</li>
+					<li>Algolia</li>
 
-			<ul>
-				<li>GitHub: <a href="https://github.com/mihdan" target="_blank">mihdan</a></li>
-				<li>Telegram: <a href="https://t.me/mihdan" target="_blank">@mihdan</a></li>
-				<li>Blog: <a href="https://www.kobzarev.com" target="_blank">kobzarev.com</a></li>
-				<li>Twitter: <a href="https://twitter.com/mihdan_dev" target="_blank">mihdan_dev</a></li>
-				<li>WP.org: <a href="https://profiles.wordpress.org/mihdan/" target="_blank">mihdan</a></li>
-				<li>Stack Overflow: <a href="https://ru.stackoverflow.com/users/223864/mihdan" target="_blank">mihdan</a></li>
-				<li>Codersrank: <a href="https://profile.codersrank.io/user/mihdan" target="_blank">mihdan</a></li>
-			</ul>	
+					<li>WordPress</li>
+					<li>WooCommerce</li>
+
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>SASS</li>
+					<li>SCSS</li>
+					<li>Material UI</li>
+					<li>Bootstrap</li>
+					<li>TailwindCSS</li>
+
+					<li>Apache</li>
+					<li>nGinx</li>
+
+					<li>JavaScript</li>
+					<li>React.js</li>
+					<li>Vue.js</li>
+
+					<li>Linux</li>
+					<li>Ubuntu</li>
+					<li>Docker</li>
+					<li>Vagrant</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>GitHub Stats</h2>
+
+				<img src="https://github-readme-stats.vercel.app/api?username=mihdan&show_icons=true&theme=default" width="500">
+			</section>
+
+			<section>
+				<h2>Top Languages</h2>
+
+				<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mihdan&layout=compact" width="500">
+			</section>
+
+			<section>
+				<h2>Get in touch</h2>
+
+				<ul>
+					<li>GitHub: <a href="https://github.com/mihdan" target="_blank">mihdan</a></li>
+					<li>LinkedIn: <a href="https://www.linkedin.com/in/mihdan/" target="_blank">Mikhail Kobzarev</a></li>
+					<li>Telegram: <a href="https://t.me/mihdan" target="_blank">@mihdan</a></li>
+					<li>Blog: <a href="https://www.kobzarev.com" target="_blank">kobzarev.com</a></li>
+					<li>Twitter: <a href="https://twitter.com/mihdan_dev" target="_blank">mihdan_dev</a></li>
+					<li>WP.org: <a href="https://profiles.wordpress.org/mihdan/" target="_blank">mihdan</a></li>
+					<li>Stack Overflow: <a href="https://ru.stackoverflow.com/users/223864/mihdan" target="_blank">mihdan</a></li>
+					<li>Codersrank: <a href="https://profile.codersrank.io/user/mihdan" target="_blank">Mikhail Kobzarev</a></li>
+				</ul>
+			</section>
 		</div>
 	</body>		
 </html>
