@@ -133,6 +133,31 @@
 				margin-bottom: 20px;
 				font-size: 0.9em;
 			}
+			@media (max-width : 544px) {
+				body {
+					padding: 0;
+				}
+				.page {
+					width: 100vw;
+				}
+
+				section {
+					width: 100vw;
+					padding: 20px;
+				}
+
+				.responsive {
+					width: 100%;
+					height: auto;
+				}
+
+				.experience dl {
+					flex-basis: calc(50% - 10px);
+				}
+				.columns {
+					flex-direction: column;
+				}
+			}
 		</style>
 	</head>
 	<body>	
@@ -141,18 +166,18 @@
 			<section>
 				<div class="columns">
 					<div class="column">
-						<img src="./assets/images/i-am-mihdan.jpg" alt="Mikhail Kobzarev" width="170">
+						<img class="responsive" src="./assets/images/i-am-mihdan.jpg" alt="Mikhail Kobzarev" width="190">
 					</div>
 					<div class="column">
 						<h1>Mikhail Kobzarev</h1>
-						<p>Hi, I am Mikhail — a senior software engineer, WordPress Ninja.</p>
+						<p>Hi, I am Mikhail — a senior software engineer, WordPress Ninja, backend developer.</p>
 						<ul class="about">
-							<li>Age: 35</li>
-							<li>Country: Russia</li>
-							<li>Marital status : Married</li>
-							<li>Employment type: Full time</li>
-							<li>Job Location type: Telecommute</li>
-							<li>Salary expectations: 300 000 RUB.</li>
+							<li><b>Age:</b> 35</li>
+							<li><b>Country:</b> Russia</li>
+							<li><b>Marital status:</b> Married</li>
+							<li><b>Employment type:</b> Full time</li>
+							<li><b>Job Location type:</b> Telecommute</li>
+							<li><b>Salary expectations:</b> 300 000 RUB.</li>
 						</ul>
 					</div>
 				</div>
@@ -163,7 +188,11 @@
 
 				<div class="experience">
 					<dl>
-						<dt><a href="https://whisk.com">Whisk</a></dt>
+						<dt><a href="https://delosfera.ru" target="_blank">Delosfera</a></dt>
+						<dd>Senior WordPress Developer <br>2020-2021</dd>
+					</dl>
+					<dl>
+						<dt><a href="https://whisk.com" target="_blank">Whisk</a></dt>
 						<dd>Senior WordPress Developer <br>2020-2021</dd>
 					</dl>
 					<dl>
@@ -171,8 +200,12 @@
 						<dd>Team Lead <br>2017-2020</dd>
 					</dl>
 					<dl>
+						<dt><a href="https://teamrussia.pro" target="_blank">Teamrussia</a></dt>
+						<dd>Team Lead <br>2016-2017</dd>
+					</dl>
+					<dl>
 						<dt><a href="https://roomble.com" target="_blank">Roomble</a></dt>
-						<dd>Team Lead <br>2015-2017</dd>
+						<dd>Team Lead <br>2014-2017</dd>
 					</dl>
 					<dl>
 						<dt><a href="https://teambo.me" target="_blank">Мой Спорт</a></dt>
@@ -248,13 +281,13 @@
 			<section>
 				<h2>GitHub Stats</h2>
 
-				<img src="https://github-readme-stats.vercel.app/api?username=mihdan&show_icons=true&theme=default" width="500">
+				<img class="responsive" src="https://github-readme-stats.vercel.app/api?username=mihdan&show_icons=true&theme=default" width="500">
 			</section>
 
 			<section>
 				<h2>Top Languages</h2>
 
-				<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mihdan&layout=compact" width="500">
+				<img class="responsive" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mihdan&layout=compact" width="500">
 			</section>
 
 			<section>
